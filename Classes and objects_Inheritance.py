@@ -40,13 +40,13 @@ class Fruit(Plant):
     def __init__(self, name):
         super().__init__(name, edible=True)
 
-Padaroshnic = Flower("Подарожник")
+padaroshnic = Flower("Подарожник")
 apple = Fruit("Яблоко")
 
 lion = Predator("Лев")
 deer = Mammal("Олень")
 
-lion.eat(Padaroshnic)
+lion.eat(padaroshnic)
 deer.eat(apple)
 
 print(f"{lion.name} жив: {lion.alive}, накормлен: {lion.fed}")
